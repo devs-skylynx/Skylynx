@@ -1,0 +1,13 @@
+{
+    "web": {
+      "client_id": "181578594664-5n6dkpa24f6fv39b3ko14fsgd8o1ffjg.apps.googleusercontent.com",
+      "project_id": "skylynx-2027-2023",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_secret": "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",
+      "redirect_uris": ["http://localhost:5000/oauth2callback"],
+      "javascript_origins": ["http://localhost:5000"]
+    }
+  }
+  

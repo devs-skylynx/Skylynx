@@ -1,0 +1,1 @@
+npm install amadeus axios body-parser cors firebase firebase-admin fs googleapis nodemailer

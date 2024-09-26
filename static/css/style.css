@@ -1,0 +1,65 @@
+/* Particles Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Keep particles behind other elements */
+}
+
+/* Custom Font Families */
+.bungee-tint-regular {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.moderustic {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Background Div */
+#bg_div {
+  backdrop-filter: blur(02px); /* Apply Gaussian blur */
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}
+
+/* Body Style */
+body {
+  cursor: none; /* Hides the default cursor */
+}
+
+/* Custom Cursor */
+.cursor-dot {
+  width: 15px; /* Increased size */
+  height: 15px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cursor-out {
+  width: 40px; /* Larger size for the outer circle */
+  height: 40px;
+  border: 3px solid hsla(0, 0%, 100%, 0.5); /* Semi-transparent white border */
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+  transition: transform 0.8s ease-out; /* Smooth transition for movement */
+}
+
