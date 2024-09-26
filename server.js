@@ -82,10 +82,29 @@ async function sendWelcomeEmail(rEmail, username) {
     `MIME-Version: 1.0`,
     `Content-Type: text/html; charset=UTF-8`,
     ``,
-    `<h1>Welcome, ${username}!</h1>`,
-    `<p>Thank you for signing up on Skylynx.</p>`,
+    `<html>`,
+    `<head>`,
+    `<style>`,
+    `  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }`,
+    `  .container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }`,
+    `  h1 { color: #333333; text-align: center; }`,
+    `  p { font-size: 16px; line-height: 1.5; color: #555555; text-align: center; }`,
+    `  .footer { margin-top: 20px; text-align: center; font-size: 12px; color: #999999; }`,
+    `</style>`,
+    `</head>`,
+    `<body>`,
+    `  <div class="container">`,
+    `    <h1>Welcome, ${username}!</h1>`,
+    `    <p>Thank you for signing up on Skylynx. We're excited to have you on board and hope you enjoy our services.</p>`,
+    `    <p>If you have any questions, feel free to reach out to our support team.</p>`,
+    `  </div>`,
+    `  <div class="footer">`,
+    `    <p>&copy; 2024 Skylynx. All rights reserved.</p>`,
+    `  </div>`,
+    `</body>`,
+    `</html>`
   ].join('\n');
-
+  
   const encodedMessage = Buffer
     .from(message)
     .toString('base64')
